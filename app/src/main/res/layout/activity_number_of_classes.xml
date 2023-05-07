@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberOfClasses"
+    android:background="#272727">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfitbold"
+            android:text="Seating Plan Maker"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"/>
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="18dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/pp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classesRV"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createSchBtn"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#00ADB5"
+        android:fontFamily="@font/outfitbold"
+        android:text="Create schedule"
+        app:cornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classesRV" />
+
+    <TextView
+        android:id="@+id/numSubError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/outfitmedium"
+        android:text=""
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classesRV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

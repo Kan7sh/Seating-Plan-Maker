@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887047336651",
+    "project_id": "seating-plan-maker-b24ff",
+    "storage_bucket": "seating-plan-maker-b24ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887047336651:android:fe6d3bd6b77329ac8b214e",
+        "android_client_info": {
+          "package_name": "com.main.seatingplanmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887047336651-a21g1tdib0uka8oi8ephcrfa9bm4ili8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkJM8hhIiz1yYw0cC80fRjoKje14jo7jQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887047336651-a21g1tdib0uka8oi8ephcrfa9bm4ili8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

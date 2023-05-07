@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:backgroundTint="#404040"
+    app:cardCornerRadius="18dp">
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/classesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Number of Students"
+            android:fontFamily="@font/outfitmedium"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/classesED"
+            android:layout_width="150dp"
+            android:fontFamily="@font/outfitmedium"
+            android:layout_height="20dp"
+            android:layout_marginLeft="12dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/classesTV"
+            android:textSize="12dp"
+            android:paddingLeft="12dp"
+            android:background="@drawable/edit_text_style"
+            tools:ignore="UnknownId"></EditText>
+        <TextView
+            android:id="@+id/subjectTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/outfitmedium"
+            android:textColor="#fff"
+            android:layout_below="@id/classesED"
+            android:text="Subject Name"/>
+        <EditText
+            android:id="@+id/nameED"
+            android:layout_marginBottom="20dp"
+            android:layout_width="150dp"
+            android:paddingLeft="12dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/outfitmedium"
+            android:layout_height="20dp"
+            android:layout_below="@id/subjectTv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/edit_text_style"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

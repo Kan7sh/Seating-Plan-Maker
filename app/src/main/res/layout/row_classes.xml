@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/classesCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="28dp"
+    android:backgroundTint="#404040"
+    android:layout_margin="8dp"
+    android:elevation="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/classLogo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/classlogo"/>
+        <TextView
+            android:layout_toRightOf="@+id/classLogo"
+            android:id="@+id/classNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="class"
+            android:fontFamily="@font/outfitmedium"
+            android:textColor="#fff"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
